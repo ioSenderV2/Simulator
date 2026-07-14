@@ -12,6 +12,10 @@ name: Build option-matched simulator
 # build_flags is a space-separated list of preprocessor symbols (e.g. "N_AXIS=4 X_GANGED=1
 # PROBE_ENABLE=1"); it is injected at the %build_flags% marker in CMakeLists.tpl exactly the way
 # the io-engineering web builder injects the selected options.
+#
+# (Re-touched to force GitHub to re-scan/register this workflow - it existed on master but never
+# showed up under Actions or accepted a dispatch, 404ing on both the list and the direct-by-name
+# API. A trivial content change + push is the standard fix for that indexing gap.)
 
 on:
   workflow_dispatch:
